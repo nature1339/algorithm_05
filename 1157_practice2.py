@@ -1,4 +1,4 @@
-words = input().upper #zZa
+words = input().upper() #zZa
 unique_words = list(set(words))
 
 cnt_list = [] # [z, a]
