@@ -1,0 +1,30 @@
+git push origin master
+
+==========
+Mac
+
+git clone https://github.com/nature1339/python_algorithm_02
+
+https://github.com/nature1339/algorithm_05.git
+
+
+=======
+Home-brew
+desktop에 새로운 폴더를 만들고 ex. Algorithm05
+
+Git repository 에서도 만든다
+다시 맥으로와서
+
+Algorithm05 폴더로 와서 > git init 
+
+Algorithm05> git status
+원하는 폴더를 algorithm05에 넣고
+
+Algorithm05> git add .
+Algorithm05> git status
+Algorithm05> git remote add origin https://github.com/nature1339/algorithm_05.git
+
+Algorithm05> git commit -m "20230302"
+Algorithm05> git push -u origin master
+
+맥북 Id, pw 넣는다
