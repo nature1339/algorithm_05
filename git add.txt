@@ -24,6 +24,10 @@ Algorithm05> git add .
 Algorithm05> git status
 Algorithm05> git remote add origin https://github.com/nature1339/algorithm_05.git
 
+Algorithm05> git add .
+Algorithm05> git status
+Algorithm05> git remote add origin https://github.com/nature1339/algorithm_05.git
+
 Algorithm05> git commit -m "20230302"
 Algorithm05> git push -u origin master
 
