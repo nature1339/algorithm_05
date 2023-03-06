@@ -1,11 +1,22 @@
-#counting sort, 한국어로 계수 정렬이라고 함. 시간복잡도는 가장 빠르지만 메모리 문제로 정렬할 수가 작을 때만 사용가능한 정렬.
-import sys #시간초과를 막기 위해
-n = int(sys.stdin.readline()) #더 빠른 입력문 사용
-num_list = [0]*10001 #0으로 초기화된 길이 10001짜리 리스트
-for i in range(n):
-    num_list[int(sys.stdin.readline())] += 1 #count해줌
+# 풀이 1.
+s = input() #level
+chk = 1
+#chk 초깃값은 1
+for i in range(len(s)//2): # 몫 2
+#단어 길이의 반으로 탐색 범위 설정
+    if s[i] != s[len(s)-i-1]: #1234321 동일하지 않으면 chk = 0  비교연산자아님
+    #단어의 양 끝을 조여가며 일치하는지 비교 (10글자면 1,10비교->2,9비교...)
+        chk = 0
+        break
+   #일치하지 않으면 0으로 바꿔주고 break
+print(chk)
+#최종적으로 양 끝이 모두 일치했으면 1, 아니면 0
 
-for i in range(1, 10001): #1부터 10000까지 순서대로 출력하므로 자연스럽게 정렬됨
-    if num_list[i] != 0:
-        for j in range(num_list[i]): #count해준만큼 출력
-            print(i)
+# 풀이 2. (slicing = 문자열[start:end:step])
+# word = input()
+#word = "1234321"
+# rev = word[::-1] # ==거꾸로된수 1234321 slicing해서 거꾸로 만들고
+# if rev == word: #비교 word원래 처음거랑 거꾸로 된 변수 rev 비교
+#     print(1)
+# else:
+#     print(0)
